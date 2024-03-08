@@ -1,0 +1,5 @@
+python compute.py '5/(1+9)*2*(4-2)'     // runs the compute.py file and gives the value of the given expression as output
+
+python graphviz.py '5/(1+9)*2*(4-2)' > graphviz_input       // runs the graphviz.py file and generates a written raw format of abstract syntax tree for the given expression in the graphviz_input file
+
+dot -Tpng graphviz_input -o output.png      // takes the raw data from the graphviz_input file and generates a png image of the abstract syntax tree. Requires graphviz(https://www.graphviz.org/) installed.
